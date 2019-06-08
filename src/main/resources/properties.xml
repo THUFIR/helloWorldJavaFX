@@ -1,0 +1,9 @@
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>maps</comment>
+    <entry key="output">file:/home/thufir/xml/output.xml</entry>
+    <entry key="api_key">fdklajfdklfj</entry>
+    <entry key="origin">90210</entry>
+    <entry key="destination">90210</entry>
+</properties>
+

@@ -10,6 +10,8 @@ plugins {
     // Apply the java plugin to add support for Java
     java
 
+//org.openjfx.javafxplugin
+
  // org.openjfx.javafxplugin
 
     // Apply the application plugin to add support for building an application
@@ -26,13 +28,16 @@ dependencies {
     // This dependency is found on compile classpath of this component and consumers.
    // implementation("com.google.guava:guava:26.0-jre")
 
-    compile (group = "org.openjfx"                   , name = "javafx"       , version = "11.0.1")
-    compile (group = "org.openjfx"                   , name = "javafx-base"       , version = "11.0.1")
+    compile (group = "org.openjfx"                   , name = "javafx"                , version = "11.0.1")
+    compile (group = "org.openjfx"                   , name = "javafx-base"           , version = "11.0.1")
     compile (group = "org.openjfx"                   , name = "javafx-controls"       , version = "11.0.1")
+    compile (group = "com.google.api-client"         , name = "google-api-client"     , version = "1.29.2")
+    compile (group = "com.google.maps"               , name = "google-maps-services"  , version = "0.9.3")
 
 
-    compile (group = "com.google.api-client"                   , name = "google-api-client"       , version = "1.29.2")
 
+   // implementation 'com.google.maps:google-maps-services:(insert latest version)'
+   // implementation 'org.slf4j:slf4j-simple:1.7.25'
 
 
     // Use TestNG framework, also requires calling test.useTestNG() below
