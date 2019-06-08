@@ -20,13 +20,17 @@ public class App {
         log.info("how to load key and set the context?");
 
         properties.loadFromXML(App.class.getResourceAsStream("/properties.xml"));
-        String GOOGLE_MAPS_API_KEY = properties.getProperty("api_key");
+        String key = properties.getProperty("api_key");
         String origin = properties.getProperty("origin");
         String destination = properties.getProperty("destinatio");
 
         
+        log.info(key);
+        log.info(origin);
+        log.info(destination);
+        
         GeoApiContext distCalcer = new GeoApiContext.Builder()
-                .apiKey(GOOGLE_MAPS_API_KEY)
+                .apiKey(key)
                 .build();
 
         DistanceMatrixApiRequest req = DistanceMatrixApi.newRequest(distCalcer);
