@@ -10,6 +10,8 @@ plugins {
     // Apply the java plugin to add support for Java
     java
 
+ // org.openjfx.javafxplugin
+
     // Apply the application plugin to add support for building an application
     application
 }
@@ -27,6 +29,10 @@ dependencies {
     compile (group = "org.openjfx"                   , name = "javafx"       , version = "11.0.1")
     compile (group = "org.openjfx"                   , name = "javafx-base"       , version = "11.0.1")
     compile (group = "org.openjfx"                   , name = "javafx-controls"       , version = "11.0.1")
+
+
+    compile (group = "com.google.api-client"                   , name = "google-api-client"       , version = "1.29.2")
+
 
 
     // Use TestNG framework, also requires calling test.useTestNG() below
