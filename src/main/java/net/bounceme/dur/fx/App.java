@@ -22,7 +22,7 @@ public class App {
         properties.loadFromXML(App.class.getResourceAsStream("/properties.xml"));
         String key = properties.getProperty("api_key");
         String origin = properties.getProperty("origin");
-        String destination = properties.getProperty("destinatio");
+        String destination = properties.getProperty("destination");
 
         
         log.info(key);

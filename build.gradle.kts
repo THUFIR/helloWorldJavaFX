@@ -33,6 +33,8 @@ dependencies {
     compile (group = "org.openjfx"                   , name = "javafx-controls"       , version = "11.0.1")
     compile (group = "com.google.api-client"         , name = "google-api-client"     , version = "1.29.2")
     compile (group = "com.google.maps"               , name = "google-maps-services"  , version = "0.9.3")
+    compile (group = "org.sfl4j"                     , name = "sfl4j-api"             , version = "1.6.1")
+
 
 
 
