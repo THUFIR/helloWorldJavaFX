@@ -22,10 +22,15 @@ repositories {
 
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
-    implementation("com.google.guava:guava:26.0-jre")
+   // implementation("com.google.guava:guava:26.0-jre")
+
+    compile (group = "org.openjfx"                   , name = "javafx"       , version = "11.0.1")
+    compile (group = "org.openjfx"                   , name = "javafx-base"       , version = "11.0.1")
+    compile (group = "org.openjfx"                   , name = "javafx-controls"       , version = "11.0.1")
+
 
     // Use TestNG framework, also requires calling test.useTestNG() below
-    testImplementation("org.testng:testng:6.14.3")
+   // testImplementation("org.testng:testng:6.14.3")
 }
 
 application {
