@@ -15,9 +15,9 @@ public class App {
         new App().runApp();
     }
 
-    private void runApp() throws IOException, GeneralSecurityException {
+    private void runApp() throws IOException, GeneralSecurityException  {
         properties.loadFromXML(App.class.getResourceAsStream("/properties.xml"));
         GoogleBookQuery g = new GoogleBookQuery();
-        g.foo(properties);
+        g.bookQuery(properties);
     }
 }
