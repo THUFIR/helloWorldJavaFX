@@ -23,8 +23,8 @@ public class App {
        // GoogleBooksQuery googleBooksQuery = new GoogleBooksQuery();
      //   googleBooksQuery.bookQuery(properties);
         
-        GoogleMapsQuery gmq = new GoogleMapsQuery();
-        gmq.query(properties);
+     //   GoogleMapsQuery gmq = new GoogleMapsQuery();
+     //   gmq.query(properties);
         
     }
 }
