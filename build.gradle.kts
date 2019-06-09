@@ -28,14 +28,16 @@ dependencies {
     // This dependency is found on compile classpath of this component and consumers.
    // implementation("com.google.guava:guava:26.0-jre")
 
-    compile (group = "org.openjfx"                   , name = "javafx"                  , version = "11.0.1")
-    compile (group = "org.openjfx"                   , name = "javafx-base"             , version = "11.0.1")
-    compile (group = "org.openjfx"                   , name = "javafx-controls"         , version = "11.0.1")
-    compile (group = "com.google.api-client"         , name = "google-api-client"       , version = "1.29.2")
-    compile (group = "com.google.maps"               , name = "google-maps-services"    , version = "0.9.3")
-    compile (group = "org.slf4j"                     , name = "slf4j-api"               , version = "1.7.21")
-    compile (group = "org.slf4j"                     , name = "slf4j-nop"               , version = "1.8.0-beta4")
-    compile (group = "com.google.cloud"              , name = "google-cloud-translate"  , version = "1.77.0")
+    compile (group = "org.openjfx"                , name = "javafx"                  , version = "11.0.1")
+    compile (group = "org.openjfx"                , name = "javafx-base"             , version = "11.0.1")
+    compile (group = "org.openjfx"                , name = "javafx-controls"         , version = "11.0.1")
+    compile (group = "com.google.api-client"      , name = "google-api-client"       , version = "1.29.2")
+    compile (group = "com.google.maps"            , name = "google-maps-services"    , version = "0.9.3")
+    compile (group = "org.slf4j"                  , name = "slf4j-api"               , version = "1.7.21")
+    compile (group = "org.slf4j"                  , name = "slf4j-nop"               , version = "1.8.0-beta4")
+    compile (group = "com.google.cloud"           , name = "google-cloud-translate"  , version = "1.77.0")
+
+
 
 
 

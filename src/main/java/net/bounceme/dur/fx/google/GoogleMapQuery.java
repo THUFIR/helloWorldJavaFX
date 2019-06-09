@@ -1,4 +1,4 @@
-package net.bounceme.dur.fx;
+package net.bounceme.dur.fx.google;
 
 import com.google.maps.DirectionsApi.RouteRestriction;
 import com.google.maps.DistanceMatrixApi;

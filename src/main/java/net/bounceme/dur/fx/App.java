@@ -1,5 +1,6 @@
 package net.bounceme.dur.fx;
 
+import net.bounceme.dur.fx.google.SpikeGoogleTranslate;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.util.Properties;
