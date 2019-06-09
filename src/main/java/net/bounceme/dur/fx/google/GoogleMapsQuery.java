@@ -13,11 +13,15 @@ import java.util.logging.Logger;
 
 
 
-public class GoogleMapQuery {
+public class GoogleMapsQuery {
 
-    private static final Logger log = Logger.getLogger(GoogleMapQuery.class.getName());
+    private static final Logger log = Logger.getLogger(GoogleMapsQuery.class.getName());
 
-    private void distance(Properties properties) throws ApiException, InterruptedException, IOException {
+    public GoogleMapsQuery() {
+    }
+
+    
+    public void query(Properties properties) throws ApiException, InterruptedException, IOException {
         log.info("how to load key and set the context?");
 
         String key = properties.getProperty("api_key");
@@ -42,5 +46,6 @@ public class GoogleMapQuery {
 
         log.info(distanceMatrixResult.toString());
     }
+
 
 }

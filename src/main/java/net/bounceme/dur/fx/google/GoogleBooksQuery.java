@@ -17,6 +17,9 @@ public class GoogleBooksQuery {
 
     private static final Logger log = Logger.getLogger(GoogleBooksQuery.class.getName());
 
+    public GoogleBooksQuery() {
+    }
+
     public void bookQuery(Properties properties) throws GeneralSecurityException, IOException {
 
         String key = properties.getProperty("api_key");
