@@ -5,4 +5,7 @@
     <entry key="api_key">AIzaSyDtE0WRh9l5AIlH6LSKYeeEKioquSWr1UQ</entry>
     <entry key="origin">1001</entry>
     <entry key="destination">90210</entry>
+    <entry key="original_language">90210</entry>
+    <entry key="translated_language">90210</entry>
+    <entry key="text_to_translate">java</entry>
 </properties>
