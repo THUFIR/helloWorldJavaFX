@@ -9,6 +9,7 @@ public class GoogleBookQuery {
 
     public void foo(Properties properties) {
 
+        log.info("starting");
         String key = properties.getProperty("api_key");
         String originalLanguage = properties.getProperty("original_language");
         String translatedLanguage = properties.getProperty("translated_language");

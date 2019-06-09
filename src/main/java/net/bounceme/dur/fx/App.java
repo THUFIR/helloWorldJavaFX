@@ -1,10 +1,10 @@
 package net.bounceme.dur.fx;
 
-import net.bounceme.dur.fx.google.SpikeGoogleTranslate;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.util.Properties;
 import java.util.logging.Logger;
+import net.bounceme.dur.fx.google.GoogleBookQuery;
 
 public class App {
 
@@ -17,7 +17,7 @@ public class App {
 
     private void runApp() throws IOException, GeneralSecurityException {
         properties.loadFromXML(App.class.getResourceAsStream("/properties.xml"));
-        SpikeGoogleTranslate spikeGoogleTranslate = new SpikeGoogleTranslate();
-        spikeGoogleTranslate.translate(properties);
+        GoogleBookQuery g = new GoogleBookQuery();
+        g.foo(properties);
     }
 }
