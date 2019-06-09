@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.util.Properties;
 import java.util.logging.Logger;
-import net.bounceme.dur.fx.google.GoogleBookQuery;
+import net.bounceme.dur.fx.google.GoogleBooksQuery;
 
 public class App {
 
@@ -17,7 +17,11 @@ public class App {
 
     private void runApp() throws IOException, GeneralSecurityException  {
         properties.loadFromXML(App.class.getResourceAsStream("/properties.xml"));
-        GoogleBookQuery g = new GoogleBookQuery();
-        g.bookQuery(properties);
+        
+        GoogleBooksQuery googleBooksQuery = new GoogleBooksQuery();
+        googleBooksQuery.bookQuery(properties);
+        
+        
+        
     }
 }

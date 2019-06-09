@@ -13,9 +13,9 @@ import com.google.api.services.books.model.Volume;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 
-public class GoogleBookQuery {
+public class GoogleBooksQuery {
 
-    private static final Logger log = Logger.getLogger(GoogleBookQuery.class.getName());
+    private static final Logger log = Logger.getLogger(GoogleBooksQuery.class.getName());
 
     public void bookQuery(Properties properties) throws GeneralSecurityException, IOException {
 
