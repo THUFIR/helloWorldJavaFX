@@ -11,14 +11,10 @@ public class GoogleBookQuery {
 
         log.info("starting");
         String key = properties.getProperty("api_key");
-        String originalLanguage = properties.getProperty("original_language");
-        String translatedLanguage = properties.getProperty("translated_language");
-        String text = properties.getProperty("text_to_translate");
+        String book = properties.getProperty("text_to_translate");
 
         log.info("key\t\t" + key);
-        log.info("from\t\t" + originalLanguage);
-        log.info("to\t\t" + translatedLanguage);
-        log.info("text\t\t" + text);
+        log.info("book\t\t" + book);
 
     }
 }

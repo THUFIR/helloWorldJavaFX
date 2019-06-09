@@ -30,6 +30,7 @@ public class BooksSample {
   //  ClientCredentials.errorIfNotSpecified();
     
   
+  /*
         String key = properties.getProperty("api_key");
         String myBook = properties.getProperty("book");
 
@@ -158,5 +159,7 @@ public class BooksSample {
       t.printStackTrace();
     }
     System.exit(0);
+
+*/
   }
 }
