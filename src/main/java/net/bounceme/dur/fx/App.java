@@ -20,8 +20,8 @@ public class App {
     private void runApp() throws IOException, GeneralSecurityException, ApiException, InterruptedException   {
         properties.loadFromXML(App.class.getResourceAsStream("/properties.xml"));
         
-        GoogleBooksQuery googleBooksQuery = new GoogleBooksQuery();
-        googleBooksQuery.bookQuery(properties);
+       // GoogleBooksQuery googleBooksQuery = new GoogleBooksQuery();
+     //   googleBooksQuery.bookQuery(properties);
         
         GoogleMapsQuery gmq = new GoogleMapsQuery();
         gmq.query(properties);

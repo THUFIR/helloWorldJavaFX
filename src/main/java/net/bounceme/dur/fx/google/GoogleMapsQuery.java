@@ -6,12 +6,12 @@ import com.google.maps.DistanceMatrixApiRequest;
 import com.google.maps.GeoApiContext;
 import com.google.maps.errors.ApiException;
 import com.google.maps.model.DistanceMatrix;
+import com.google.maps.model.DistanceMatrixRow;
 import com.google.maps.model.TravelMode;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Properties;
 import java.util.logging.Logger;
-
-
 
 public class GoogleMapsQuery {
 
@@ -20,7 +20,6 @@ public class GoogleMapsQuery {
     public GoogleMapsQuery() {
     }
 
-    
     public void query(Properties properties) throws ApiException, InterruptedException, IOException {
         log.info("how to load key and set the context?");
 
@@ -45,7 +44,13 @@ public class GoogleMapsQuery {
                 .await();
 
         log.info(distanceMatrixResult.toString());
-    }
 
+        DistanceMatrixRow[] rows = distanceMatrixResult.rows;
+        int length = rows.length;
+
+        for (Object object : rows) {
+            log.info(object.toString());
+        }
+    }
 
 }
