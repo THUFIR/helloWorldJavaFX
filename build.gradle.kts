@@ -31,13 +31,12 @@ dependencies {
     compile (group = "org.openjfx"             , name = "javafx"                     , version = "11.0.1")
     compile (group = "org.openjfx"             , name = "javafx-base"                , version = "11.0.1")
     compile (group = "org.openjfx"             , name = "javafx-controls"            , version = "11.0.1")
-    compile (group = "com.google.api-client"   , name = "google-api-client"          , version = "1.29.2")
-    compile (group = "com.google.maps"         , name = "google-maps-services"       , version = "0.9.3")
-    compile (group = "org.slf4j"               , name = "slf4j-api"                  , version = "1.7.21")
-    compile (group = "org.slf4j"               , name = "slf4j-nop"                  , version = "1.8.0-beta4")
-    compile (group = "com.google.cloud"        , name = "google-cloud-translate"     , version = "1.77.0")
-    compile (group = "com.google.apis"         , name = "google-api-services-books"  , version = "v1-rev106-1.25.0")
-
+ //    compile (group = "com.google.api-client"   , name = "google-api-client"          , version = "1.29.2")
+ //    compile (group = "com.google.maps"         , name = "google-maps-services"       , version = "0.9.3")
+ //    compile (group = "org.slf4j"               , name = "slf4j-api"                  , version = "1.7.21")
+ //    compile (group = "org.slf4j"               , name = "slf4j-nop"                  , version = "1.8.0-beta4")
+ //    compile (group = "com.google.cloud"        , name = "google-cloud-translate"     , version = "1.77.0")
+ //    compile (group = "com.google.apis"         , name = "google-api-services-books"  , version = "v1-rev106-1.25.0")
 
 
 

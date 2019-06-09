@@ -1,5 +1,6 @@
 package net.bounceme.dur.fx.google;
 
+import com.google.gson.JsonObject;
 import com.google.maps.DirectionsApi.RouteRestriction;
 import com.google.maps.DistanceMatrixApi;
 import com.google.maps.DistanceMatrixApiRequest;
@@ -9,7 +10,6 @@ import com.google.maps.model.DistanceMatrix;
 import com.google.maps.model.DistanceMatrixRow;
 import com.google.maps.model.TravelMode;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.Properties;
 import java.util.logging.Logger;
 
@@ -21,7 +21,7 @@ public class GoogleMapsQuery {
     }
 
     public void query(Properties properties) throws ApiException, InterruptedException, IOException {
-        log.info("how to load key and set the context?");
+        log.info("how to get the travel time between two zip codes?");
 
         String key = properties.getProperty("api_key");
         String origin = properties.getProperty("origin");
@@ -48,9 +48,18 @@ public class GoogleMapsQuery {
         DistanceMatrixRow[] rows = distanceMatrixResult.rows;
         int length = rows.length;
 
+        JsonObject jo = new JsonObject();
+        
         for (Object object : rows) {
             log.info(object.toString());
         }
+        
+       
+      
+        
+        
+        
+        
     }
 
 }
