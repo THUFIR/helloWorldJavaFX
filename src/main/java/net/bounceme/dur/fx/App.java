@@ -16,7 +16,7 @@ public class App {
     private static final Logger log = Logger.getLogger(App.class.getName());
     private Properties properties = new Properties();
 
-    private void distance() throws IOException, ApiException, InterruptedException  {
+    private void distance() throws IOException, ApiException, InterruptedException {
         log.info("how to load key and set the context?");
 
         properties.loadFromXML(App.class.getResourceAsStream("/properties.xml"));
@@ -24,34 +24,23 @@ public class App {
         String origin = properties.getProperty("origin");
         String destination = properties.getProperty("destination");
 
-        
         log.info(key);
         log.info(origin);
         log.info(destination);
-        
-        GeoApiContext distCalcer = new GeoApiContext.Builder()
+
+        GeoApiContext distanceCalculator = new GeoApiContext.Builder()
                 .apiKey(key)
                 .build();
 
-        DistanceMatrixApiRequest req = DistanceMatrixApi.newRequest(distCalcer);
-        DistanceMatrix result = req.origins(origin)
+        DistanceMatrixApiRequest distanceMatrixRequest = DistanceMatrixApi.newRequest(distanceCalculator);
+        DistanceMatrix distanceMatrixResult = distanceMatrixRequest.origins(origin)
                 .destinations(destination)
                 .mode(TravelMode.DRIVING)
                 .avoid(RouteRestriction.TOLLS)
                 .language("en-US")
                 .await();
 
-        /*
-        GeoApiContext context = new GeoApiContext.Builder()
-                .apiKey(GOOGLE_MAPS_API_KEY)
-                .build();
-        DistanceMatrixApiRequest distanceMatrixApiRequest = DistanceMatrixApi.newRequest(context)
-                .mode(TravelMode.DRIVING)
-                .trafficModel(TrafficModel.BEST_GUESS)
-                .departureTime(Instant.now().atZone(ZoneOffset.UTC).toInstant())
-                .destinations(destination)
-                .origins(origin);
-         */
+        log.info(distanceMatrixResult.toString());
     }
 
     public static void main(String[] args) throws IOException, ApiException, InterruptedException {
