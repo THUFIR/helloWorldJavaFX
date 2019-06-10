@@ -12,10 +12,14 @@ plugins {
 
  // org.openjfx.javafxplugin
 
-    javafxplugin
+  //  javafxplugin
 
     // Apply the application plugin to add support for building an application
     application
+
+
+    id("org.openjfx.javafxplugin") version "0.0.7"
+
 }
 
 
@@ -61,4 +65,16 @@ application {
 val test by tasks.getting(Test::class) {
     // Use TestNG for unit tests
     useTestNG()
+}
+
+
+
+javafx {
+    // will pull in transitive modules
+    modules("javafx.controls", "javafx.fxml") // replace with what you modules need
+
+    // another option is to use:
+    // modules = listOf("javafx.controls", "javafx.fxml")
+
+    version = "12.0.1" // or whatever version you're using
 }
